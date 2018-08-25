@@ -7,7 +7,11 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    index: 0
+  },
+  changeTabbar(e) {
+    this.setData({ index: e.currentTarget.dataset.id })
   },
   //事件处理函数
   bindViewTap: function() {

@@ -1,13 +1,30 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="tui-tabbar-content">
+  <view class="tui-tabbar-group">
+    <text data-id="0" bindtap="changeTabbar" class="tui-tabbar-cell {{index == 0 ? 'tui-active' : ''}}"> 搬家</text>
+    <text data-id="1" bindtap="changeTabbar" class="tui-tabbar-cell {{index == 1 ? 'tui-active' : ''}}">保洁</text>
+    <text data-id="2" bindtap="changeTabbar" class="tui-tabbar-cell {{index == 2 ? 'tui-active' : ''}}">联系我们</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+</view>
+<view class="tui-list-box {{index == 0 ? '' : 'tui-hide'}}">
+  <image  src="../img/huoche.jpg" class="xl-img"></image>
+  <text class="xl-font">\r\n搬家服务—居民搬家、公司搬家、长短途搬家\r\n</text>
+  <text class="xl-font">家居拆装—各种家具、家私拆装、专业技工\r\n</text>
+  <text class="xl-font">空调服务—移机、维修、加氟\r\n</text>
+  <text class="xl-font-big">24小时服务  价格合理  安全省心  可开发票</text>
+</view>
+<view class="tui-list-box {{index == 1 ? '' : 'tui-hide'}}">
+  <image  src="../img/baojie.jpg" class="xl-img"></image>
+  <text class="xl-font-baojie">家庭保洁、深度保洁、开荒保洁\r\n</text>
+  <text class="xl-font-big">24小时服务  价格合理  安全省心  可开发票</text>
+</view>
+<view class="tui-list-box {{index == 2 ? '' : 'tui-hide'}}">
+  
+  <text class="xl-font-big">联系电话：13466673328\r\n</text>
+  <text class="xl-font-big">投诉电话：13601116579\r\n</text>
+  <text class="xl-font-big">\r\n服务范围：覆盖全北京\r\n</text>
+  <text class="xl-font-big">延庆人自己的搬家——小刘搬家\r\n</text>
+  <text class="xl-font-big">小刘搬家，找我搬家，搬到幸福家\r\n</text>
+  <text class="xl-font-big">扛起的是信任，搬不走的是荣誉\r\n</text>
+  <text class="xl-font-big">专心为您服务\r\n</text>
 </view>

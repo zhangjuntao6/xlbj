@@ -19,3 +19,59 @@
 .usermotto {
   margin-top: 200px;
 }
+
+page{background-color: #efeff4;}
+.tui-tabbar-content{
+  padding: 10px;
+}
+.tui-tabbar-group{
+  border: 1px solid #4cd964;
+  border-radius: 3px;
+  overflow: hidden;
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  color: #4cd964;
+}
+.tui-tabbar-cell{
+  display: table-cell;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 35rpx;
+  text-align: center;
+}
+.tui-tabbar-cell:not(:last-child){border-right: 1px solid #4cd964;}
+.tui-tabbar-cell.tui-active{background-color: #4cd964;color: #fff;}
+
+.tui-list-box{border-top:1px solid #c8c7cc;}
+
+.tui-hide{
+  display: none;
+}
+
+.xl-font{
+  font-size: 36rpx;
+  text-align: left;
+}
+
+.xl-font-big{
+  font-size: 40rpx;
+  color:red;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.xl-font-baojie{
+  font-size: 36rpx;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.xl-img {
+  width:100%;
+}
